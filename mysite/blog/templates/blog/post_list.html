@@ -1,13 +1,24 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-	{% for post in posts %}
-	    <div class="post">
-	        <div class="date">
-	            {{ post.published_date }}
-	        </div>
-	        <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-	        <p>{{ post.text|linebreaksbr }}</p>
-	    </div>
+
+
+	
+{% for post in posts %}
+		<div class="post-list">
+			<div class="date">
+				<p>{{ post.published_date }}</p>
+			
+			</div>
+			
+			<div class ="post_text">
+				<h2 class="post-title"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+				<p>{{ post.text|safe|truncatewords:"10"|linebreaksbr }}</p><br>
+				&nbsp;
+				<a id="readMore" href="{% url 'post_detail' pk=post.pk %}">...read more</a>
+			</div>
+		</div>
+		
 	{% endfor %}
+		
 {% endblock %}

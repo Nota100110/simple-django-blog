@@ -1,46 +1,148 @@
-.page-header {
-    background-color: #ff9400;
-    margin-top: 0;
-    padding: 20px 20px 20px 40px;
+/* Show it is fixed to the top */
+body {
+  height: 100%;
+  padding-top: 4.5rem;
 }
 
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
-    font-size: 36pt;
-    text-decoration: none;
+.outer {
+	background-color: #ffffff;
 }
 
-.content {
-    margin-left: 40px;
+.inner {
+	background-color: #ffffff;
+	border-left: double;
+	border-right: double;
+	
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+.navbar {
+	font-family: "EB Garamond";
+	font-size: 14px;
+	color: #b89eb9;
+}
+
+
+input[type=text] {
+    width: 110px;
+	border: 1px ;
+	border-radius: 5px;
+	font-size: 14px;
+	background-color: #;
+	background-image: url('searchicon.png');
+		
+	background-repeat: no-repeat;
+	padding: 5px 20px 5px 20px;
+	-webkit-transition: width 0.2s ease-in-out;
+	transition: width 0.1s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 80%;
+}
+
+.search-bar {
+	padding-top: 10px;
+	padding-right: 50px;
+	padding-bottom: 10px
+}
+
+.zig-zag {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+hr.zig, hr.zag {
+  border: none;
+  height: 30px;
+  margin: 0 50px;
+}
+
+hr.zig{
+  background: linear-gradient(-135deg, #FFF 20px, rgba(0, 0, 0, 0) 0) 0 5px, linear-gradient(135deg, #FFF 20px, rgba(0, 0, 0, 0) 0) 0 5px;
+  background-color: rgba(0, 0, 0, 0);
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  background-size: 20px 40px;
+  z-index: 100;
+  position: relative;
+}
+
+hr.zag {
+  background: linear-gradient(-135deg, #333 20px, rgba(0, 0, 0, 0) 0) 0 5px, linear-gradient(135deg, #333 20px, #FFF 0) 0 5px;
+  background-color: rgba(0, 0, 0, 0);
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  background-size: 20px 40px;
+  z-index: 50;
+  margin-top: -28px;
+}
+
+.jumbo {
+	padding-top: 50px;
+	font-family: "EB Garamond";
+}
+
+.jumbotron {
+	background-image: url (blog/media/sample-1.jpg);
+}
+
+.post-list {
+	margin: 80px;
+    width: 100%;
+    padding-left: 120px;
+}
+
+.post-title {
+	font-family: "EB Garamond";
+	color: #0FD2CE;
+}
+
+.post_text {
+	font-family: "EB Garamond";
+	color: #718693;
+	font-size: 20px; 
 }
 
 .date {
-    color: #828282;
+	font-family: "EB Garamond";
+	color: #718693;
+	font-size: 20px; 
 }
 
-.save {
-    float: right;
+#readMore {
+	color: #d091ba;
+	display: inline-block;
+	font-family: "EB Garamond";
+	font-size: 20px; 
 }
 
-.post-form textarea, .post-form input {
-    width: 100%;
+.pager {
+	font-family: "EB Garamond";
+	color: #718693
 }
 
-.top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
-    float: right;
-    font-size: 26pt;
-    margin-right: 20px;
+.fa {
+	color: #0FD2CE;
 }
 
-.post {
-    margin-bottom: 70px;
+.post-form {
+	position: relative;
 }
 
-.post h1 a, .post h1 a:visited {
-    color: #000000;
+.post-form {
+	padding: 50px 50px 50px 50px; 
 }
+
+.main-title {
+    font-family: 'Lobster';
+	font-size:4.2em;
+	font-weight:500;
+}
+
+.main-title2 {
+    font-family: "EB Garamond";
+	font-size:20px;
+	font-weight:500;
+}
+
